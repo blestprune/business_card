@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.deepOrangeAccent,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -35,50 +36,47 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.0,
                     fontWeight: FontWeight.normal),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.deepPurple,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+55 81 99899-9999',
-                      style: TextStyle(
-                          color: Colors.deepPurple,
-                          fontFamily: 'Karla',
-                          fontSize: 20.0),
-                    ),
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.deepPurple,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.deepPurple,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'email@email.com',
-                      style: TextStyle(
-                          fontFamily: 'Karla',
-                          fontSize: 20.0,
-                          color: Colors.deepPurple),
-                    ),
-                  ],
+                elevation: 5.0,
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.deepPurple,
+                  ),
+                  title: Text(
+                    '+55 81 99899-9999',
+                    style: TextStyle(
+                        color: Colors.deepPurple,
+                        fontFamily: 'Karla',
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                elevation: 5.0,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.deepPurple,
+                  ),
+                  title: Text(
+                    'email@email.com',
+                    style: TextStyle(
+                        color: Colors.deepPurple,
+                        fontFamily: 'Karla',
+                        fontSize: 20.0),
+                  ),
                 ),
               ),
             ],

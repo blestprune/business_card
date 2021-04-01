@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                elevation: 5.0,
+                elevation: 4.0,
                 margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
                 child: ListTile(
                   leading: Icon(
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                elevation: 5.0,
+                elevation: 4.0,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
